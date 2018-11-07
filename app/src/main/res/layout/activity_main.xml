@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/from"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:ems="10"
+                android:id="@+id/etFrom"
+                android:inputType="number"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/to"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:ems="10"
+                android:id="@+id/etTo"
+                android:inputType="number"/>
+        </TableRow>
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rBtnPrim"
+                android:checked="true"
+                android:text="@string/prim" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rBtnSec1"
+                android:text="@string/sac1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rBtnSec2"
+                android:text="@string/sec2" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/clr"
+                android:onClick="onClear"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cal"
+                android:onClick="onCalculate"/>
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lstPrimes"/>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

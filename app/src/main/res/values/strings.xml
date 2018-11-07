@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PrimeNumbers</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="prim">Primary thread</string>
+    <string name="sac1">Secondary thread with errors</string>
+    <string name="sec2">Secondary thread</string>
+    <string name="clr">Clear</string>
+    <string name="cal">Calculate</string>
+</resources>
